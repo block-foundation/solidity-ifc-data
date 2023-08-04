@@ -14,7 +14,6 @@
 
 </div>
 
-
 ## Introduction
 
 The `IFCDataContract` is a Solidity smart contract designed to integrate with Industry Foundation Classes (IFC) data via an Oracle. 
