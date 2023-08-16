@@ -36,11 +36,15 @@
 
 </div>
 
+**The `IFCDataContract` is a Solidity-based Ethereum smart contract designed to facilitate the integration with Industry Foundation Classes (IFC) data through a decentralized oracle mechanism.**
+
 ## Introduction
 
 The `IFCDataContract` is a Solidity smart contract designed to integrate with Industry Foundation Classes (IFC) data via an Oracle. 
 
 > IFC is a data standard used widely in the architecture, engineering, and construction (AEC) industry to facilitate interoperability between different software used in these fields. The data standard encompasses various elements of building information modeling (BIM) including building elements, cost management, project management, structural elements, and more.
+
+> Industry Foundation Classes (IFC) is a crucial data standard in the architecture, engineering, and construction (AEC) industry, serving to promote interoperability across varying software platforms. `IFCDataContract` aims to bridge the gap between the decentralized world of Ethereum and the AEC industry by allowing seamless access to IFC data.
 
 The `IFCDataContract` contract acts as a client contract in a decentralized oracle network and is designed to request specific IFC data from an external data source, receive and store that data, and then provide access to the stored data.
 
@@ -54,7 +58,57 @@ The contract is derived from the `Ownable` contract, giving it a basic access co
 
 This contract represents a simple yet powerful example of how blockchain technology can interact with industry-specific standards like IFC, enabling the creation of decentralized applications that can serve specialized use cases in sectors such as construction and architecture.
 
-Please note, this contract serves as a conceptual demonstration and needs thorough testing, auditing, and potential modifications before any production use. Always exercise caution and due diligence when working with smart contracts.
+## Features
+
+- **Oracle Integration**: Request and retrieve IFC data via a decentralized oracle.
+- **Access Control**: Based on the `Ownable` pattern, ensures only authorized calls.
+- **Event Logging**: Enhanced traceability and frontend integration support.
+
+## Setup & Installation
+
+1. **Prerequisites**:
+   - [Node.js](https://nodejs.org/)
+   - [npm](https://www.npmjs.com/)
+   - [Hardhat](https://hardhat.org/)
+   - Ethereum Wallet (e.g., [Metamask](https://metamask.io/))
+
+2. **Clone the repository**:
+
+   ```bash
+   git clone <repository-link>
+   cd IFCDataContract
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. **Compile the Contract**:
+
+   ```bash
+   npx hardhat compile
+   ```
+
+2. **Deploy the Contract**:
+
+   ```bash
+   npx hardhat run scripts/deploy.js --network rinkeby
+   ```
+
+   Replace `rinkeby` with your desired network.
+
+## Testing
+
+1. **Run the Test Script**:
+
+   ```bash
+   npx hardhat test
+   ```
+
 
 ## Class Diagram
 
